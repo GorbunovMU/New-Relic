@@ -5,4 +5,3 @@
     - role: newrelic.newrelic-infra
       vars:
         nrinfragent_config:
-            license_key: NRAK-GRNX28EEP7TPBA1KH6OA0VYBHWL
