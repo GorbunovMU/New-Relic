@@ -1,6 +1,7 @@
 # Create a configuration file and add your license key \
 
-echo "license_key: NRAK-GRNX28EEP7TPBA1KH6OA0VYBHWL" | sudo tee -a /etc/newrelic-infra.yml && \
+
+echo "license_key: NRAK-X6U334ON3BPWB4FJ4973OF5LENU" | sudo tee -a /etc/newrelic-infra.yml && \
 
 \
 
