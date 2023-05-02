@@ -13,4 +13,7 @@
   hosts: 10.134.196.122
  
   tasks:
+    - copy:
+        src: newrelic-infra.yml
+        dest: /etc/newrelic-infra.yml
     - script: agent-install-linux.sh 

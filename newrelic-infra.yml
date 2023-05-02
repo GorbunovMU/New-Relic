@@ -1,0 +1,6 @@
+license_key: 7fcb1dadcafa186546ebb63f521774e58c2cNRAL
+log:
+  file: '/var/log/newrelic-infra/newrelic-infra.log'
+  level: debug
+  forward: true
+  stdout: false
