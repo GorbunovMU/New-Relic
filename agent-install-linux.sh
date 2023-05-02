@@ -1,1 +1,2 @@
+ansible -m ping all
 curl -Ls https://download.newrelic.com/install/newrelic-cli/scripts/install.sh | bash && sudo  NEW_RELIC_API_KEY=NRAK-GRNX28EEP7TPBA1KH6OA0VYBHWL NEW_RELIC_ACCOUNT_ID=3010614 /usr/local/bin/newrelic install
