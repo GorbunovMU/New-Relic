@@ -1,7 +1,16 @@
-# playbook
+# # playbook
+# ---
+# - hosts: 10.134.196.122
+#   roles:
+#     - role: newrelic.newrelic-infra
+#       vars:
+#         nrinfragent_config:
+
+
+
 ---
-- hosts: 10.134.196.122
-  roles:
-    - role: newrelic.newrelic-infra
-      vars:
-        nrinfragent_config:
+- name: newrelic agent setup  
+  hosts: 10.134.196.122
+ 
+  tasks:
+    - script: agent-install.sh 
