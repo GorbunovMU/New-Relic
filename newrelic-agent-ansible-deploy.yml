@@ -13,4 +13,4 @@
   hosts: 10.134.196.122
  
   tasks:
-    - script: agent-install.sh 
+    - script: agent-install-linux.sh 
