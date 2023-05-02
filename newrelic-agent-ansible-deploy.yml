@@ -11,10 +11,11 @@
 ---
 - name: newrelic agent setup  
   hosts: 10.134.196.122
+  become: yes
+  sudo: yes
  
   tasks:
     - copy:
         src: newrelic-infra.yml
         dest: /etc/newrelic-infra.yml
-        remote_src: yes
     - script: agent-install-linux.sh 
