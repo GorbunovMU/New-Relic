@@ -14,7 +14,7 @@
       win_get_url:
         url: "https://download.newrelic.com/infrastructure_agent/windows/newrelic-infra.msi"
         # url: "https://download.newrelic.com/nr_agent_release/win32/newrelic-agent-win-x64-{{ newrelic_version }}.msi"
-        dest: "C:\Program Files\New Relic\newrelic-infra.msi"
+        dest: 'C:\Program Files\New Relic\newrelic-infra.msi'
 
 
     - name: Install New Relic agent
