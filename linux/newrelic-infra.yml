@@ -1,4 +1,4 @@
-license_key: 7fcb1dadcafa186546ebb63f521774e58c2cNRAL
+license_key: "{{ newrelic_license_key }}"
 log:
   file: '/var/log/newrelic-infra/newrelic-infra.log'
   level: debug
