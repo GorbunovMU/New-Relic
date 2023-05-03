@@ -19,7 +19,7 @@
 
     - name: Install New Relic agent
       win_package:
-        path: "C:\Program Files\New Relic\newrelic-infra.msi"
+        path: 'C:\Program Files\New Relic\newrelic-infra.msi'
         # product_id: "{INSERT_PRODUCT_ID_HERE}"
         arguments: "/qb LICENSE_KEY={{ newrelic_license_key }}"
 
