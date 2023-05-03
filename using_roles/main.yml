@@ -6,6 +6,6 @@
         log_file: /opt/logs/newrelic-infra.log
         verbose: 0
         nrinfragent_config:
-          license_key: {{ newrelic_license_key }}
+          license_key: "{{ newrelic_license_key }}"
           custom_attributes:
             environment: dev
