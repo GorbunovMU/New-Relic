@@ -1,0 +1,31 @@
+#setup some temp dir for download as in lie 10 probably will have to be different    
+# use admin account to login into windows box
+# make sure you have a product ID as well as license key
+#remove the comments :)
+# run the playbook against some windows box
+
+    
+---
+- name: Install New Relic agent on Windows
+  hosts: 10.114.32.32
+  gather_facts: no
+  tasks:
+    - name: Download New Relic agent installer
+      win_get_url:
+        url: "https://download.newrelic.com/infrastructure_agent/windows/newrelic-infra.msi"
+        # url: "https://download.newrelic.com/nr_agent_release/win32/newrelic-agent-win-x64-{{ newrelic_version }}.msi"
+        dest: "C:\Program Files\New Relic\newrelic-infra.msi"
+
+
+    - name: Install New Relic agent
+      win_package:
+        path: "C:\Program Files\New Relic\newrelic-infra.msi"
+        # product_id: "{INSERT_PRODUCT_ID_HERE}"
+        arguments: "/qb LICENSE_KEY={{ newrelic_license_key }}"
+
+
+    - name: Start New Relic agent service
+      win_service:
+        name:  newrelic-infra
+        # name: "newrelicmonitor"
+        state: started
