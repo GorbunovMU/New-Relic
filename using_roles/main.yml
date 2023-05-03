@@ -1,5 +1,6 @@
 ---
 - hosts: 10.134.196.122
+  become: yes
   roles:
     - name: newrelic.newrelic-infra
       vars:
