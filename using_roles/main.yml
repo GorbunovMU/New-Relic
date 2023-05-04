@@ -1,5 +1,5 @@
 ---
-- hosts: 10.134.196.122
+- hosts: 10.114.32.32
   become: yes
   roles:
     - name: newrelic.newrelic-infra
