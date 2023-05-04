@@ -1,5 +1,5 @@
 ---
-- hosts: 10.114.32.43
+- hosts: 10.114.32.32
   # gather_facts: yes
   # become: yes
   roles:
