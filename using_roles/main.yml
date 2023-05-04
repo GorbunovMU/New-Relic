@@ -1,6 +1,6 @@
 ---
 - hosts: 10.134.196.122
-  gather_facts: no
+  gather_facts: false
   become: yes
   roles:
     - name: newrelic.newrelic-infra
