@@ -1,7 +1,7 @@
 ---
 - hosts: 10.114.32.43
-  gather_facts: yes
-  become: yes
+  # gather_facts: yes
+  # become: yes
   roles:
     - name: newrelic.newrelic-infra
       vars:
