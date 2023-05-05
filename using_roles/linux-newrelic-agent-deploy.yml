@@ -1,7 +1,5 @@
 ---
-- hosts: newrelic_agent_os_linux:newrelic_agent_os_windows
-  # gather_facts: yes
-  # become: yes
+- hosts: newrelic_agent_os_linux
   roles:
     - name: newrelic.newrelic-infra
       vars:
