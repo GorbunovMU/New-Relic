@@ -1,5 +1,5 @@
 ---
-- hosts: 10.114.32.32
+- hosts: newrelic_agent_os_linux:newrelic_agent_os_windows
   # gather_facts: yes
   # become: yes
   roles:
