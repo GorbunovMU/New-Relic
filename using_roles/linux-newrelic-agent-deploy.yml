@@ -1,5 +1,6 @@
 ---
 - hosts: newrelic_agent_os_linux
+  become: yes
   roles:
     - name: newrelic.newrelic-infra
       vars:
